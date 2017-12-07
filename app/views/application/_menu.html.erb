@@ -1,0 +1,22 @@
+
+  <header class="masthead clearfix">
+    <div class="inner">
+      <h3 class="masthead-brand">Cover</h3>
+      <nav class="nav nav-masthead">
+        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" href="#">Features</a>
+        <a class="nav-link" href="#">Contact</a>
+
+        <% if signed_in? %>
+              Signed in as: <%= current_user.email %>
+              <%= link_to 'Sign out', sign_out_path, method: :delete, :class => 'nav-link' %>
+        <% else %>
+              <%= link_to 'Sign in', sign_in_path, :class => 'nav-link' %>
+        <% end %>
+
+      </nav>
+
+
+
+    </div>
+  </header>

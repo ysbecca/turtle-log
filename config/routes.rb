@@ -19,7 +19,9 @@ Rails.application.routes.draw do
   end
  
   constraints Clearance::Constraints::SignedIn.new do
-    root to: "pages#new", as: :signed_in_root
+    root to: "pages#index"
+  	
+    # root to: "pages#new", as: :signed_in_root
   end
 end
 
