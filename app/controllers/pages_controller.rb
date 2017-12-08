@@ -4,9 +4,15 @@ class PagesController < ApplicationController
   before_action :require_login, only: [:new]
    
   def index
-  	
   end
  
   def new
   end
+
+  def about
+  end
+
+  def contact
+  end
+
 end

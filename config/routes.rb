@@ -13,14 +13,17 @@ Rails.application.routes.draw do
   get "/sign_up" => "clearance/users#new", as: "sign_up"
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
- 
+
+  get "pages/about" => "pages#about", as: "about"
+  get "pages/contact" => "pages#contact", as: "contact"
+
+
   constraints Clearance::Constraints::SignedOut.new do
     root to: "pages#index"
   end
  
   constraints Clearance::Constraints::SignedIn.new do
     root to: "pages#index"
-  	
     # root to: "pages#new", as: :signed_in_root
   end
 end
