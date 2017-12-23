@@ -1,29 +1,26 @@
 
-
-<header class="header">
-  <div role="navigation" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-
-        <div class="navbar-buttons">
-        
-          <button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle navbar-btn">Menu<i class="pe-7s-menu"></i></button>
+ <!-- Side Navbar -->
+  <nav class="side-navbar">
+    <div class="side-navbar-wrapper">
+      <div class="sidenav-header d-flex align-items-center justify-content-center">
+        <div class="sidenav-header-inner text-center">
+          <h2 class="h5 text-uppercase">Rebecca Stone</h2><span class="text-uppercase">PhD student</span>
         </div>
+        <div class="sidenav-header-logo"><a href="index.html" class="brand-small text-center"> <strong>T</strong><strong class="text-primary">L</strong></a></div>
       </div>
-      <div id="navigation" class="collapse navbar-collapse navbar-right">
-        <ul class="nav navbar-nav">
-          <li><%= link_to "Home", root_path, :class => "scroll-to" %></li>
-        <li><%= link_to "About", about_path, :class => "nav-link" %></li>
-        <li><%= link_to "Contact", contact_path, :class => "nav-link" %></li>
-        <li>
-          <% if signed_in? %>
-                <%= link_to 'Sign out', sign_out_path, method: :delete, :class => "nav-link" %>
-          <% else %>
-                <%= link_to 'Sign in', sign_in_path, :class => 'nav-link' %>
-          <% end %>
-        </li>
+      <div class="main-menu">
+        <ul id="side-main-menu" class="side-menu list-unstyled">
+
+          <li class="<%= current_class?(root_path) %>"><%= link_to "Home", root_path %></li>
+          <li class="<%= current_class?(root_path) %>"><%= link_to "My Log", root_path %></li>
+
+          <li class="<%= current_class?(contact_path) %>"> <%= link_to "Contact", contact_path %></li>
+          <li class="<%= current_class?(about_path) %>"> <%= link_to "Bug Log", about_path %></li>
+          <li class="<%= current_class?(sign_out_path) %>"> <%= link_to 'Sign out', sign_out_path, method: :delete %></li>
+   
         </ul>
       </div>
     </div>
-  </div>
-</header>
+  </nav>
+
+

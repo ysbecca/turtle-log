@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+
+//=require js/charts-custom
+//=require js/charts-home
+//=require js/front
+//=require js/grasp_mobile_progress_circle-1.0.0.min
+
+//=require vendor/chart.js/Chart.min
+//=require vendor/jquery-validation/additional-methods
+//=require vendor/jquery-validation/jquery.validate.min
+//=require vendor/jquery.cookie/jquery.cookie
+
+//=require vendor/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min

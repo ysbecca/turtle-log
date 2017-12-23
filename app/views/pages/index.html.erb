@@ -1,62 +1,64 @@
+<!-- Counts Section -->
+<section class="dashboard-counts section-padding">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="wrapper count-title d-flex">
+          <div class="icon"><i class="icon-list"></i></div>
+          <div class="name"><strong class="text-uppercase">Open Tasks</strong><span>For today</span>
+            <div class="count-number">5</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="wrapper count-title d-flex">
+          <div class="icon"><i class="icon-list-1"></i></div>
+          <div class="name"><strong class="text-uppercase">Completed Tasks</strong><span>Since the beginning of time</span>
+            <div class="count-number">45</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-2 col-md-4 col-6">
+        <div class="wrapper count-title d-flex">
+          <div class="icon"><i class="icon-user"></i></div>
+          <div class="name"><strong class="text-uppercase">Events</strong><span>This week</span>
+            <div class="count-number">2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <section id="intro" class="text-intro no-padding-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h1>Turtle Logs: <span class="rotate"> post-its with a calendar combined in the simplest way possible.</span> </h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12">
-              <p>Made by PhD students for PhD students, and other people too.</p>
-              
-            </div>
-            <div class="col-md-12 col-lg-8 col-lg-offset-2">
-              <p class="margin-bottom--zero"><img alt="" src="img/features3.png" class="img-responsive"></p>
-            </div>
-          </div>
-        </div>
-      </section>
 
-      <!--   *** FEATURES ***-->
-      <section id="features" class="section">
-        <div class="container">
-          <div class="row text-center-mobile"> 
-            <div class="col-md-6">
-              <div class="icon"><i class="pe-7s-diamond"></i></div>
-              <h2>First great feature</h2>
-              <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed.  </p>
-            </div>
-            <div class="col-md-6">
-              <p><img alt="" src="img/features1.png" class="img-responsive"></p>
-            </div>
+<!-- Greeting section -->
+  <section class="dashboard-header section-padding">
+    <div class="container-fluid">
+      <div class="row d-flex align-items-md-stretch">
+        <!-- Welcome disclaimer -->
+        <div class="col-lg-3 col-md-6">
+          <div class="wrapper to-do">
+            <header>
+              <h1 class="display h4">{This} doesn't work, or can you add {this useful feature}?</h1>
+              <p>Thank you. Please keep in mind that this project is in Beta - but you can help out by adding any issues to the <%= link_to "Bug Log", about_path %>, contacting me directly <%= link_to "here", contact_path %>, or forking my project <%= link_to "on GitHub", "https://github.com/ysbecca/turtle-log", :target => "_blank" %> and creating a pull request!</p>
+            </header>
           </div>
         </div>
-      </section>
-      <section class="section background-gray-lightest">
-        <div class="container">
-          <div class="row text-center-mobile"> 
-            <div class="col-md-6">
-              <p><img alt="" src="img/features2.png" class="img-responsive"></p>
-            </div>
-            <div class="col-md-6">
-              <div class="icon brand-terciary"><i class="pe-7s-rocket"></i></div>
-              <h2>Second super feature</h2>
-              <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
-            </div>
+        <!-- Plug for help -->
+        <div class="col-lg-3 col-md-6">
+          <div class="wrapper">
+            <h1 class="display h4">Can I help build Turtle Log?</h1>
+            <p>Yes! Collaborations are welcome. I hope that this project will be the product of many ideas. Send me an <%= link_to "email", "mailto:ysbecca@gmail.com" %> so I know who you are and what you're working on, and then <%= link_to "fork away", "https://github.com/ysbecca/turtle-log", :target => "_blank" %>.</p>
           </div>
         </div>
-      </section>
-      <section class="section no-padding-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-lg-8 col-lg-offset-2 text-center">
-              <div class="icon brand-secondary"><i class="pe-7s-graph1"></i></div>
-              <h2>Third feature</h2>
-              <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
-              <p class="margin-bottom--zero"><img alt="" src="img/features3.png" class="img-responsive"></p>
-            </div>
+        <!-- Technology -->
+         <div class="col-lg-3 col-md-6">
+          <div class="wrapper">
+            <h1 class="display h4">What is Turtle Log built with?</h1>
+            <p>This project is built with Ruby and the Ruby on Rails framework. For scheduling, I am using the standard (a.k.a free) <%= link_to "DHTMLX Javascript library", "https://dhtmlx.com/", :target => "_blank" %>. The theme is by <%= link_to "Bootstrapious", "https://bootstrapious.com", :target => "_blank" %>. I try to look at, write, and think about as little CSS as possible.</p>
           </div>
         </div>
-      </section>
-      <!--   *** FEATURES END ***  -->
+      </div>
+    </div>
+  </section>
+
